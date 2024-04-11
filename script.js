@@ -21,6 +21,6 @@ async function buscarVideos() {
         listaVideos.innerHTML = `<p>Não foi possivel carregar os videos: ${erro}</p>`
     }
 };
-
+;
 
 buscarVideos();
