@@ -4,8 +4,10 @@ const barraPesquisa = document.querySelector('.pesquisar__input');
 
 async function buscarVideos() {
     try{
-        const busca = await fetch('http://localhost:3000/videos');
+        const busca = await fetch('https://api-vidflow.vercel.app/api/videos');
         const videos = await busca.json();
+
+        console.log(busca)
         
         videos.forEach( (video) => {
             listaVideos.innerHTML += `
